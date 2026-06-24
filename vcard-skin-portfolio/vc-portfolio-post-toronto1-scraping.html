@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+    <head>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155171867-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-155171867-1');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+        
+        <title>Din Chaney - Web Scraping for Data </title>
+
+        <meta name="description" content="To get started with this project, I began with web scraping to obtain the postal codes for Toronto Neighborhoods" />
+        <meta name="keywords" content="Din Chaney,Python,Data,Data Science,Data Analysis,Sales,Marketing,Design,HTML,CSS" />
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Din Chaney - Web Scraping for Data" />   
+        <meta property="og:description" content="To get started with this project, I began with web scraping to obtain the postal codes for Toronto Neighborhoods.">
+        <meta property="og:url" content="https://dinchaney.com/" />
+        <meta property="og:image" content="https://www.dinchaney.com/images/chaney-logo-small.png" />
+        <meta property="og:image:alt" content="Din Chaney" />
+        <meta property="og:site_name" content="Din Chaney" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="Web scraping to obtain the postal codes for Toronto Neighborhoods" />
+        <meta name="twitter:title" content="Din Chaney - Web Scraping for Data" />
+        <meta name="twitter:site" content="@dinchaney" />
+        <meta name="twitter:image" content="https://www.dinchaney.com/images/chaney-logo-small.png"  />
+        <meta name="twitter:creator" content="@dinchaney" />
+
+        <!-- fonts -->      
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Ek+Mukta:400,500,700,800" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
+        <!-- /fonts -->  
+
+        <!-- All styles -->
+            <link rel='stylesheet' href='../css/style.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/fontello/css/fontello-embedded.min.css' type='text/css' media='all' />      
+            <link rel='stylesheet' href='../css/cv/cv.buttons.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/trx_addons/trx_addons_icons-embedded.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/trx_addons/trx_addons.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/responsive.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/custom.min.css' type='text/css' media='all' />      
+        <!-- /All styles -->                    
+    </head>
+
+    <!-- Start body -->
+    <body class="home blog trx_addons_cv body_style_wide scheme_default blog_mode_home blog_style_classic_2 sidebar_show sidebar_right vc_portfolio ">
+        <div class="trx_addons_cv_body_wrap">
+            <div class="trx_addons_cv_header trx_addons_cv_tint_light trx_addons_cv_header_image_style_boxed">
+                <!-- header_data social_item -->
+                <div class="trx_addons_cv_header_data">
+                    <div class="trx_addons_cv_header_image trx_addons_hover trx_addons_hover_style_wide">
+                        <a href="vcard-portfolio.html">
+                            <img src='../images/scraping-icon-img.png' alt="web scraping">
+                        </a>
+                        <div class="trx_addons_hover_mask"></div>
+                        <div class="trx_addons_hover_content">
+                            <h6 class="trx_addons_hover_title">
+                                <a href="../vcard-skin-portfolio/vcard-portfolio.html">Back to Portfolio</a>
+                            </h6>
+                        </div>
+                    </div>
+                        <a href="../home.html">
+                            <h5 class="trx_addons_cv_header_text">DIN CHANEY</h5>
+                        </a>
+                        <!--
+                    <div class="trx_addons_cv_header_socials">
+                        <span class="social_item">
+                            <a href="#" target="_blank" class="social_icons social_twitter">
+                                <span class="trx_addons_icon-twitter"></span>
+                            </a>
+                        </span>
+                        <span class="social_item">
+                            <a href="#" target="_blank" class="social_icons social_facebook">
+                                <span class="trx_addons_icon-facebook"></span>
+                            </a>
+                        </span>
+                        <span class="social_item">
+                            <a href="#" target="_blank" class="social_icons social_gplus">
+                                <span class="trx_addons_icon-gplus"></span>
+                            </a>
+                        </span>
+                        <span class="social_item">
+                            <a href="#" target="_blank" class="social_icons social_tumblr">
+                                <span class="trx_addons_icon-tumblr"></span>
+                            </a>
+                        </span>
+                        <span class="social_item">
+                            <a href="#" target="_blank" class="social_icons social_instagram">
+                                <span class="trx_addons_icon-instagram"></span>
+                            </a>
+                        </span>
+                        <span class="social_item">
+                            <a href="#" target="_blank" class="social_icons social_dribbble">
+                                <span class="trx_addons_icon-dribbble"></span>
+                            </a>
+                        </span>
+                    </div>
+                -->
+                </div>
+                <!-- /header_data social_item -->
+            </div>
+
+            <div class="trx_addons_cv_content">
+                <article class="trx_addons_cv_single post_type_cv_portfolio cv_portfolio type-cv_portfolio status-publish has-post-thumbnail">
+                    <!-- breadcrumbs -->
+                    <div class="trx_addons_cv_breadcrumbs">
+                        <a href="vcard-portfolio.html" class="trx_addons_cv_breadcrumbs_item">VCard</a>
+                        <a href="vcard-portfolio.html" class="trx_addons_cv_breadcrumbs_item">Portfolio</a>
+                        <a href="vcard-portfolio.html" class="trx_addons_cv_breadcrumbs_item">Web Scraping</a>
+                        <span class="trx_addons_cv_breadcrumbs_item">04.</span>
+                    </div>
+                    <!-- /breadcrumbs -->
+
+                    <div class="trx_addons_cv_single_thumb">
+                        <img src="../images/toronto1-img-small.png" class="attachment-trx_addons-thumb-full size-trx_addons-thumb-full" alt="Web Scraping Toronto Project"> 
+                    </div>
+                    <div class="trx_addons_cv_single_header entry-header">
+                        <h1 class="trx_addons_cv_single_title entry-title">04.</h1>
+                        <h6 class="trx_addons_cv_single_subtitle">Toronto Neighborhoods (Part 1): Web Scraping</h6>
+                    </div> 
+                    <div class="trx_addons_cv_single_content entry-content">
+                        <p>
+                            For this project, I worked with multiple datasets containing Toronto Census data (3 million rows!!).  I supplemented this data using web scraping and data mining. <br><br>
+
+                            Because my data came from several sources, a lot of data cleaning, data manipulation and joining happened.  Much of these tasks were performed using SQL.  Data was stored using a relational database. <br><br>
+
+                            I used clustering to identify similarities and groups between different neighborhoods based on different properties.
+                            With that information, I developed a scoring method to rank and rate neighborhoods based on profiles and characteristics. <br><br>
+                            Finally, I created visualizations of findings, illustrating different relations and trends.<br>
+                            <a href="../blog/post-standard-toronto.html"><b><font color='#fc03db'>SEE MORE OF THIS PROJECT</font></b></a>
+                        </p>
+                        <p>
+                            <i>Used: BeautifulSoup, Python, SQL, Scikit, MatPlotlib, Dash, Flask </i>
+                        </p>
+                    </div> 
+                </article>  
+            </div> 
+        </div>
+
+        <!-- All Scripts -->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+            <script type='text/javascript' src='../js/packed.js'></script>
+            <script type='text/javascript' src='../js/_utils.min.js'></script>   
+            <script type='text/javascript' src='../js/_init.min.js'></script>   
+            <script type='text/javascript' src='../js/_main2.min.js'></script>
+        <!-- /All Scripts -->
+      
+        <!-- To top btn -->
+            <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
+        <!-- /To top btn -->
+
+<!-- Blog LEFT -->
+            <a href="../blog/index.html" class="trx_addons_cv_button trx_addons_cv_button_cv">
+                <img src="../images/chaney-blog-button2-left-xsmall.png" alt="Go to Blog ...">
+            </a>
+        <!-- /Blog --> 
+
+<!-- Vcard RIGHT -->
+            <a href="../vcard-skin-main/vcard.html" class="trx_addons_cv_button trx_addons_cv_button_blog">
+                <img src="../images/chaney-vcard-button2-right-xsmall.png" alt="Go to VCard ...">
+            </a>
+        <!-- /Vcard --> 
+
+    </body>
+    <!-- End body -->
+</html>

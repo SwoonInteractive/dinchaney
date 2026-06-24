@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js scheme_default">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png" /> 
+            
+            <title>Analyzing 13 Years of Amazon Spending Data Over 13 Years - Din Chaney - Blog </title>
+        
+        <!-- fonts -->      
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Ek+Mukta:400,500,700,800" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
+        <!-- /fonts -->     
+
+        <!-- All styles -->
+            <link rel='stylesheet' href='../css/style.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/fontello/css/fontello-embedded.min.css' type='text/css' media='all' />     
+            <link rel='stylesheet' href='../css/instagram-feed/sb-instagram.min.css' type='text/css' media='all' />   
+            <link rel='stylesheet' href='../css/cv/cv.buttons.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/trx_addons/trx_addons_icons-embedded.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/trx_addons/trx_addons.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/responsive.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' href='../css/custom.min.css' type='text/css' media='all' />       
+        <!-- /All styles -->    
+    </head>
+
+    <!-- Start Body -->   
+    <body class="single single-post single-format-standard body_style_wide scheme_default blog_mode_post sidebar_hide">
+        <!-- Start main page wrap -->
+        <div class="page_wrap">
+            <!-- Top Panel -->
+            <div class="top_panel_logo_wrap">
+                <div class="content_wrap top_panel_logo">
+                    <a class="logo" href="../blog/index.html">
+                        <img src="../images/chaney-logo-resize-pink.png" class="logo_main" alt="Din Chaney">
+                    </a>
+                    <a class="menu_mobile_button icon-menu"></a>
+                </div>
+            </div>
+            <!-- /Top Panel -->
+            <div class="top_panel_fixed_wrap"></div>
+ <!-- Start Header -->
+                <header class="top_panel_wrap">
+                    <div class="menu_main_wrap clearfix">
+                        <div class="content_wrap">
+                            <nav class="menu_main_nav_area">
+                                <!-- Start main menu -->
+                                <ul id="menu_main" class="menu_main_nav">
+                                    <li class="menu-item">
+                                    <li class="menu-item menu-item-has-children current-menu-item"> 
+                                        <a href="index.html">BLOG HOME</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="blog-style-hire-now.html">Hire Now</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="../vcard-skin-portfolio/vcard-portfolio.html">Go to Portfolio</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="../vcard-skin-main/vcard.html">Go to VCard</a>
+                                            </li> 
+                                        </ul>
+                                    </li>
+                                </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">What's New</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="#">All Posts</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-toronto-interactive.html">Interactive Map of Toronto Neighborhoods</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-toronto.html">Toronto Neighborhoods Part 1 and Part 2</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-gossip.html">Using Data on Gossip Girl</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-geo.html">Design Inspiration: Geometric</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-twitter-live.html">Live Twitter Analysis Dashboard</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-twitter.html">Live Twitter Analysis</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-amazon.html">Analyzing 13 Years of Amazon Spending Data</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-amazon-interactive.html">Amazon Spending Dashboard</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-graffiti.html">Design Inspiration: Graffiti</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-gold.html">Design Inspiration: Gilded</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-you-cant.html">You Can't Sit With Us</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-recommend.html">Recommender Engine for Trending Products</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-keyword.html">Keyword Sentiment</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-pandas.html">Pandas! Pandas! Pandas!</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-scraping.html">Scraping Sephora's Website</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-word-cloud.html">Down The Rabbit Hole with WordCloud</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-fries.html">French Fries in Data</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-learning-data-science.html">Learning Data Science</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-happiness.html">Correlating Factors: Husband's Happiness</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="category-in-action.html">In Action</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-toronto-interactive.html">Interactive Map of Toronto Neighborhoods</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-twitter-live.html">Live Twitter Analysis Dashboard</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-amazon-interactive.html">Amazon Spending Dashboard</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="not-exists-page.html">Easter Eggs</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="category-notepad.html">NOTEPAD</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <li class="menu-item menu-item-has-children current-menu-item">
+                                        <a href="category-my-life-in-data.html">This is Real Life</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="post-standard-gossip.html">Using Data on Gossip Girl</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="post-standard-amazon.html">Amazon Spending Dashboard</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="post-standard-happiness.html">Correlating Factors: Husband's Happiness</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="post-with-gallery-inspo.html">Design Inspo</a>
+
+                                    </li>
+                                </ul>
+                                <!-- End main menu -->
+                                <!-- Start Header Search Form -->
+                                <div class="search_wrap">
+                                    <div class="search_form_wrap">
+                                        <form role="search" method="get" class="search_form" action="#">
+                                            <input type="text" class="search_field" placeholder="Search" value="" name="s">
+                                            <button type="submit" class="search_submit icon-search"></button>
+                                        </form>
+                                    </div>
+                                    <div class="search_results widget_area">
+                                        <a class="search_results_close icon-cancel"></a>                           
+                                    </div>
+                                </div>
+                                <!-- End Header Search Form -->
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <!-- End Header -->
+
+            <div class="menu_mobile_overlay"></div>   
+            <!-- Start Mobile Menu -->
+                    <div class="menu_mobile">
+                        <nav class="menu_mobile_nav_area">                            
+                            <ul id="menu_mobile" class="menu_mobile_nav">
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="index.html">BLOG HOME</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item">
+                                            <a href="blog-style-hire-now.html">Hire Now</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="../vcard-skin-portfolio/vcard-portfolio.html">Go to Portfolio</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="../vcard-skin-main/vcard.html">Go to VCard</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="menu-item current-menu-item menu-item-has-children current">
+                                    <a href="#">What's New</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="#">All Posts</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-toronto-interactive.html">Interactive Map of Toronto Neighborhoods</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-toronto.html">Toronto Neighborhoods Part 1 and Part 2</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-gossip.html">Using Data on Gossip Girl</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-geo.html">Design Inspiration: Geometric</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-twitter-live.html">Live Twitter Analysis Dashboard</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-twitter.html">Live Twitter Analysis</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-amazon.html">Analyzing 13 Years of Amazon Spending Data</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-amazon-interactive.html">Amazon Spending Dashboard</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-graffiti.html">Design Inspiration: Graffiti</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-gold.html">Design Inspiration: Gilded</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-you-cant.html">You Can't Sit With Us</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-recommend.html">Recommender Engine for Trending Products</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-keyword.html">Keyword Sentiment</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-pandas.html">Pandas! Pandas! Pandas!</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-scraping.html">Scraping Sephora's Website</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-word-cloud.html">Down The Rabbit Hole with WordCloud</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-fries.html">French Fries in Data</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-learning-data-science.html">Learning Data Science</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-happiness.html">Correlating Factors: Husband's Happiness</a>
+                                                    </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                                <a href="category-in-action.html">In Action</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-toronto-interactive.html">Interactive Map of Toronto Neighborhoods</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-twitter-live.html">Live Twitter Analysis Dashboard</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="post-standard-amazon-interactive.html">Amazon Spending Dashboard</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        <li class="menu-item">
+                                            <a href="not-exists-page.html">Easter Eggs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="category-notepad.html">Notepad</a>
+                                </li>
+                                <li class="menu-item">
+                                    <li class="menu-item menu-item-has-children current-menu-item">
+                                    <a href="category-my-life-in-data.html">This is Real Life</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item">
+                                            <a href="post-standard-gossip.html">Using Data on Gossip Girl</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="post-standard-amazon.html">Amazon Spending Dashboard</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="post-standard-happiness.html">Correlating Factors: Husband's Happiness</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </li>
+                                <li class="menu-item">
+                                    <a href="post-with-gallery-inspo">Design Inspo</a>
+                                </li>
+                            </ul>                              
+                        </nav>
+                <!-- Start socials_mobile -->
+               <!-- <div class="socials_mobile">
+                    <span class="social_item">
+                        <a href="#" target="_blank" class="social_icons social_twitter">
+                            <span class="trx_addons_icon-twitter"></span>
+                        </a>
+                    </span>
+                    <span class="social_item">
+                        <a href="#" target="_blank" class="social_icons social_facebook">
+                            <span class="trx_addons_icon-facebook"></span>
+                        </a>
+                    </span>
+                    <span class="social_item">
+                        <a href="#" target="_blank" class="social_icons social_gplus">
+                            <span class="trx_addons_icon-gplus"></span>
+                        </a>
+                    </span>
+                    <span class="social_item">
+                        <a href="#" target="_blank" class="social_icons social_tumblr">
+                            <span class="trx_addons_icon-tumblr"></span>
+                        </a>
+                    </span>
+                    <span class="social_item">
+                        <a href="#" target="_blank" class="social_icons social_instagram">
+                            <span class="trx_addons_icon-instagram"></span>
+                        </a>
+                    </span>
+                    <span class="social_item">
+                        <a href="#" target="_blank" class="social_icons social_dribbble">
+                            <span class="trx_addons_icon-dribbble"></span>
+                        </a>
+                    </span>
+                </div>-->
+                <!-- End socials_mobile --> 
+
+                <!-- Start Search mobile -->
+                <div class="search_mobile">
+                    <div class="search_form_wrap">
+                        <form role="search" method="get" class="search_form" action="#">
+                            <input type="text" class="search_field" placeholder="Search ..." value="" name="s">
+                            <button type="submit" class="search_submit icon-search-light" title="Start search"></button>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Search mobile -->
+            </div>
+            <!-- /End Mobile Menu -->               
+
+            <!-- Start Main Content -->
+            <div class="page_content_wrap">
+                <div class="content_wrap">
+                    <div class="content">
+                        <article class="post_item_single post type-post has-post-thumbnail category-post-formats">
+                            <div class="post_featured">
+                                <img src="../images/amazon-spending-img.png" class="attachment-din_c-thumb-big size-din_c-thumb-big" alt="Standard Post With Featured Image"> 
+                            </div>
+                            <div class="post_header entry-header">
+                                <div class="post_categories">
+                                    <a href="post-all-formats.html" rel="category tag">This is Real Life</a>
+                                </div>
+                                <h2 class="post_title entry-title">Analyzing 13 Years of Amazon Spending Data Over 13 Years - Interactive Chart</h2>
+                                <div class="post_date">
+                                    <span class="date updated">October 15, 2019</span>
+                                </div>
+                            </div>
+                            <div class="post_content post_content_standart_post entry-content">
+                               
+                                <p><iframe src="http://localhost:8050" width="3000" height="1500"></iframe>
+                                    <br>
+                                <p></p>        
+                                <div class="post_meta">
+                                    <div class="post_taxes">
+                                        <div class="post_tags">
+                                            <a href="#" rel="tag">This is Real Life</a>
+                                            <a href="#" rel="tag">Data</a>
+                                            <a href="#" rel="tag">Interactive</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="post_counters post_counters_single">
+                                        <a href="#" class="post_counters_item post_counters_comments trx_addons_icon-comment">
+                                            <span class="post_counters_number">3</span>
+                                            <span class="post_counters_label">Comments</span>
+                                        </a>
+                                        <a href="#" class="post_counters_item post_counters_views trx_addons_icon-eye">
+                                            <span class="post_counters_number">261</span>
+                                            <span class="post_counters_label">Views</span>
+                                        </a>
+                                        <a href="#" class="post_counters_item post_counters_likes trx_addons_icon-heart-empty" title="Like" data-postid="143" data-likes="1" data-title-like="Like" data-title-dislike="Dislike">
+                                            <span class="post_counters_number">1</span>
+                                            <span class="post_counters_label">Likes</span>
+                                        </a>
+                                        <div class="post_counters_item post_share">
+                                            <div class="socials_wrap socials_share socials_size_tiny socials_drop">
+                                                <a href="#" class="socials_caption">
+                                                    <span class="socials_caption_label">Share</span>
+                                                </a>
+                                                <span class="social_items">
+                                                    <span class="social_item social_item_popup">
+                                                        <a href="#" data-link="#" data-count="twitter">
+                                                            <span class="trx_addons_icon-twitter"></span><i>twitter</i>
+                                                        </a>
+                                                    </span>
+                                                    <span class="social_item social_item_popup">
+                                                        <a href="#" class="social_icons social_facebook" data-link="#" data-count="facebook">
+                                                            <span class="trx_addons_icon-facebook"></span><i>facebook</i>
+                                                        </a>
+                                                    </span>
+                                                    <span class="social_item social_item_popup">
+                                                        <a href="#" class="social_icons social_gplus" data-link="#" data-count="gplus">
+                                                            <span class="trx_addons_icon-gplus"></span><i>gplus</i>
+                                                        </a>
+                                                    </span>
+                                                    <span class="social_item social_item_popup">
+                                                        <a href="#" class="social_icons social_tumblr" data-link="#" data-count="tumblr">
+                                                            <span class="trx_addons_icon-tumblr"></span><i>tumblr</i>
+                                                        </a>
+                                                    </span>
+                                                    <span class="social_item social_item_popup">
+                                                        <a href="#" class="social_icons social_mail" data-link="mailto:hire@dinchaney.com" data-count="mail">
+                                                            <span class="trx_addons_icon-mail"></span><i>mail</i>
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="author_info author">
+                                <div class="author_avatar">
+                                    <img alt="Din Chaney" src="../images/din-chaney.png" class="avatar photo"> 
+                                </div>
+                                <div class="author_description">
+                                    <h6 class="author_title">
+                                        <span>Din Chaney</span>
+                                    </h6>
+                                    <div class="author_bio">
+                                        About the Author
+                                        <a class="author_link" href="../vcard-portfolio/about.html">
+                                            Who are You? Find out Here.
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="nav-links-single">
+                            <nav class="navigation post-navigation">
+                                <h2 class="screen-reader-text"></h2>
+                                <div class="nav-links">
+                                    <div class="nav-previous">
+                                       <!-- <a href="post-standart-without-image.html" rel="prev">
+                                            <span class="nav-arrow"></span>
+                                            <span class="screen-reader-text">Previous post:</span> 
+                                            <h6 class="post-title"></h6>
+                                            <span class="post_date"></span>
+                                        </a> -->
+                                    </div>
+                                    <div class="nav-next">
+                                       <!-- <a href="post-standart.html" rel="next">
+                                            <span class="nav-arrow"></span>
+                                            <span class="screen-reader-text">Next post:</span> 
+                                            <h6 class="post-title"></h6>
+                                            <span class="post_date"></span>
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--  Start Related_posts area -->
+                      <!--  <section class="related_wrap">
+                            <h5 class="related_wrap_title">You May Also Like</h5>
+                            <div class="columns_wrap">
+                                <div class="column-1_2">
+                                    <div class="related_item">
+                                        <div class="post_featured post_featured1">
+                                            <div class="post_header entry-header">
+                                                <div class="post_categories">
+                                                    <ul class="post-categories">
+                                                        <li>
+                                                            <a href="post-all-formats.html" rel="category tag">Post Formats</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <h5 class="post_title entry-title">
+                                                    <a href="post-standart-without-image.html">Standard post without featured image</a>
+                                                </h5>
+                                                <span class="post_date">
+                                                    <a href="#">January 20, 2016</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column-1_2">
+                                    <div class="related_item">
+                                        <div class="post_featured post_featured2">
+                                            <div class="post_header entry-header">
+                                                <div class="post_categories">
+                                                    <ul class="post-categories">
+                                                       <li>
+                                                            <a href="post-all-formats.html" rel="category tag">Post Formats</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <h5 class="post_title entry-title">
+                                                    <a href="post-audio.html">Local Hosted Audio</a>
+                                                </h5>
+                                                <span class="post_date">
+                                                    <a href="#">January 15, 2016</a>
+                                                </span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
+                        <!--  End Related_posts area -->
+
+                        <!-- Start comment area -->
+                        <section class="comments_wrap">
+                          <!--  <div id="comments" class="comments_list_wrap">
+                                <h5 class="section_title comments_list_title">3 Comments</h5>
+                                <ul class="comments_list">
+                                    <li class="comment even thread-even depth-1 comment_item">
+                                        <div class="comment_author_avatar">
+                                            <img alt="Din Chaney" src="../images/chaney-logo-small-placeholder.png"  class="avatar photo">
+                                        </div>
+                                        <div class="comment_content">
+                                            <div class="comment_info">
+                                                <h6 class="comment_author">Din Chaney</h6>
+                                                <span class="comment_date">February 1, 2016</span>
+                                                <span class="comment_time">10:42 am</span>
+                                                <span class="comment_counters">
+                                                    <a href="#" class="comment_counters_item comment_counters_likes trx_addons_icon-heart-empty">
+                                                        <span class="comment_counters_number">2</span>
+                                                        <span class="comment_counters_label">Likes</span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="comment_text_wrap">
+                                                <div class="comment_text">
+                                                    <p>Suspendisse vel varius tortor. Praesent feugiat mattis diam, tristique dictum sapien luctus non. Aliquam quis lorem tellus sed blandit libero magna.</p>
+                                                </div>
+                                            </div>
+                                            <div class="comment_reply">
+                                                <a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+                                            </div>
+                                        </div>
+                                        <ul class="children">
+                                            <li class="comment byuser comment-author-trx_admin bypostauthor comment_item">
+                                                <div class="comment_author_avatar">
+                                                    <img alt="Din Chaney" src="../images/chaney-logo-small-placeholder.png"  class="avatar photo">
+                                                </div>
+                                                <div class="comment_content">
+                                                    <div class="comment_info">
+                                                        <h6 class="comment_author">Din Chaney
+                                                            <a href="#"></a>
+                                                        </h6>
+                                                        <span class="comment_date">February 1, 2016</span>
+                                                        <span class="comment_time">10:44 am</span>
+                                                        <span class="comment_counters">
+                                                            <a href="#" class="comment_counters_item comment_counters_likes trx_addons_icon-heart-empty">
+                                                                <span class="comment_counters_number">2</span>
+                                                                <span class="comment_counters_label">Likes</span>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="comment_text_wrap">
+                                                        <div class="comment_text">
+                                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a congue massa. Aenean tincidunt quam mauris, ut maximus nisl fringilla ac.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment_reply">
+                                                        <a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="comment even thread-odd thread-alt comment_item">
+                                        <div class="comment_author_avatar">
+                                            <img alt="Din Chaney" src="../images/chaney-logo-small-placeholder.png" class="avatar photo">
+                                        </div>
+                                        <div class="comment_content">
+                                            <div class="comment_info">
+                                                <h6 class="comment_author">Din Chaney/
+                                                    <a href="#"></a>
+                                                </h6>
+                                                <span class="comment_date">February 4, 2016</span>
+                                                <span class="comment_time">8:41 am</span>
+                                                <span class="comment_counters">
+                                                    <a href="#" class="comment_counters_item comment_counters_likes trx_addons_icon-heart-empty">
+                                                        <span class="comment_counters_number">2</span>
+                                                        <span class="comment_counters_label">Likes</span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="comment_text_wrap">
+                                                <div class="comment_text">
+                                                    <p>Praesent molestie posuere dictum. Aliquam lobortis massa urna, in bibendum neque gravida a. Maecenas bibendum enim ultricies dictum pretium.</p>
+                                                </div>
+                                            </div>
+                                            <div class="comment_reply">
+                                                <a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </div> -->
+
+                            <!-- Start Comment Form -->
+                            <div class="comments_form_wrap">
+                                <h5 class="section_title comments_form_title">Leave a Reply</h5>
+                                <div class="comments_form">
+                                    <div id="respond" class="comment-respond">                       
+                                        <form action="#" method="post" class="comment-form" novalidate="">
+                                            <div class="comments_field comments_message">
+                                                <label class="required">Your Message</label>
+                                                <textarea name="comment" placeholder="Comment" aria-required="true"></textarea>
+                                            </div>
+                                            <div class="comments_field comments_author">
+                                                <label class="required">Name</label>
+                                                <input name="author" type="text" placeholder="Name *" value="" size="30" aria-required="true">
+                                            </div>
+                                            <div class="comments_field comments_email">
+                                                <label for="email" class="required">Email</label>
+                                                <input id="email" name="email" type="text" placeholder="Email *" value="" size="30" aria-required="true">
+                                            </div>
+                                            <div class="comments_field comments_site">
+                                                <label for="url" class="optional">Website</label>
+                                                <input id="url" name="url" type="text" placeholder="Website" value="" size="30" aria-required="true">
+                                            </div>
+                                            <p class="form-submit">
+                                                <input name="submit" type="submit" id="send_comment" class="submit" value="Add Comment">                                                 
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Start Comment Form -->
+                        </section>
+                        <!-- End comment area -->
+                    </div>
+                </div>
+            </div>                    
+             <!-- End Main Content -->                
+            <!-- Start Footer instagram area -->
+                <!--<footer class="footer_wrap widget_area footer_fullwidth">
+                    <div class="footer_wrap_inner widget_area_inner">                  
+                        <h5 class="widget_title">Follow me on Instagram</h5>
+                        <div class="textwidget">
+                            <div id="sb_instagram" class="sbi sbi_disable_mobile sbi_col_8" data-id="1977939434" data-num="8" data-res="medium" data-cols="8" data-options='{"sortby": "none", "headercolor": "", "imagepadding":"0"}'>
+                                <div id="sbi_images">
+                                    <div class="sbi_loader fa-spin"></div>
+                                </div>
+                                <div id="sbi_load"></div>
+                            </div>
+                        </div>                        
+                    </div>
+                </footer>-->
+            <!-- End Footer instagram area -->
+
+            <!-- Start Footer copyright area -->
+            <div class="copyright_wrap">
+                <div class="copyright_wrap_inner">
+                    <div class="content_wrap">
+                        <div class="copyright_text footer_text">
+                            <a href="http://swoon.com">Swoon. Love the Hustle.</a>
+                            © 2019. All rights reserved. 
+                            <a href="#">Terms of use</a> and 
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <!--<div class="socials_wrap">
+                            <span class="social_item">
+                                <a href="#" target="_blank" class="social_icons social_twitter">
+                                    <span class="trx_addons_icon-twitter"></span>
+                                </a>
+                            </span>
+                            <span class="social_item">
+                                <a href="#" target="_blank" class="social_icons social_facebook">
+                                    <span class="trx_addons_icon-facebook"></span>
+                                </a>
+                            </span>
+                            <span class="social_item">
+                                <a href="#" target="_blank" class="social_icons social_gplus">
+                                    <span class="trx_addons_icon-gplus"></span>
+                                </a>
+                            </span>
+                            <span class="social_item">
+                                <a href="#" target="_blank" class="social_icons social_tumblr">
+                                    <span class="trx_addons_icon-tumblr"></span>
+                                </a>
+                            </span>
+                            <span class="social_item">
+                                <a href="#" target="_blank" class="social_icons social_instagram">
+                                    <span class="trx_addons_icon-instagram"></span>
+                                </a>
+                            </span>
+                            <span class="social_item">
+                                <a href="#" target="_blank" class="social_icons social_dribbble">
+                                    <span class="trx_addons_icon-dribbble"></span>
+                                </a>
+                            </span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer copyright area -->
+        </div>
+        <!-- End main page wrap -->
+
+        <!-- All Scripts -->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+            <script type='text/javascript' src='../js/packed.js'></script>
+            <script type='text/javascript' src='../js/_utils.min.js'></script>   
+            <script type='text/javascript' src='../js/_init.min.js'></script>   
+            <script type='text/javascript' src='../js/_main.min.js'></script>
+        <!-- /All Scripts -->
+        
+         <!-- To top btn -->
+            <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
+        <!-- /To top btn -->
+
+          <!-- Portfolio RIGHT -->
+            <a href="../vcard-skin-portfolio/vcard-portfolio.html" class="trx_addons_cv_button trx_addons_cv_button_blog">
+                <img src="../images/chaney-portfolio-button2-right-xsmall.png" alt="Din Chaney Portfolio">
+            </a>
+        <!-- /Portfolio --> 
+
+
+        <!-- Vcard LEFT-->
+            <a href="../vcard-skin-main/vcard.html" class="trx_addons_cv_button trx_addons_cv_button_cv">
+                <img src="../images/chaney-vcard-button2-left-xsmall.png" alt="Din Chaney VCard">
+            </a>
+        <!-- /Vcard --> 
+    </body>
+    <!-- End body -->
+</html>
